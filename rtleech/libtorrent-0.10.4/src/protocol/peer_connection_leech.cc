@@ -190,7 +190,7 @@ PeerConnectionLeech::read_message() {
     return true;
 
   case ProtocolBase::INTERESTED:
-    set_remote_interested();
+    set_remote_not_interested();
     return true;
 
   case ProtocolBase::NOT_INTERESTED:
@@ -210,10 +210,6 @@ PeerConnectionLeech::read_message() {
 
     if (!m_up->choked()) {
       write_insert_poll_safe();
-      read_request_piece(m_down->read_request());
-
-    } else {
-      m_down->read_request();
     }
 
     return true;

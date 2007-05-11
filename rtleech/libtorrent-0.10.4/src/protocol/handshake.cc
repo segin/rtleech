@@ -110,7 +110,7 @@ void
 Handshake::initialize_incoming(const rak::socket_address& sa) {
   m_incoming = true;
   m_address = sa;
-
+  
   m_state = READ_INFO;
 
   manager->poll()->open(this);
@@ -373,7 +373,8 @@ Handshake::event_write() {
     case BITFIELD:
       write_bitfield();
 
-      return;
+ 
+     return;
 
     default:
       throw internal_error("Handshake::event_write() called in invalid state.");
