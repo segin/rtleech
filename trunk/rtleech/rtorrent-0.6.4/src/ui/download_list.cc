@@ -201,7 +201,7 @@ DownloadList::activate_display(Display displayType) {
 
   // Set title.
   switch (displayType) {
-  case DISPLAY_DOWNLOAD_LIST: control->ui()->window_title()->set_title("rTorrent " VERSION " - libTorrent " + std::string(torrent::version())); break;
+  case DISPLAY_DOWNLOAD_LIST: control->ui()->window_title()->set_title("rTleech " VERSION " - libTorrent " + std::string(torrent::version())); break;
   case DISPLAY_LOG:           control->ui()->window_title()->set_title("Log"); break;
   default: break;
   }

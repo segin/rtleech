@@ -86,7 +86,7 @@
 #define PACKAGE_TARNAME "rtorrent"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.6.4"
+#define PACKAGE_VERSION "0.6.4-0.1"
 
 /* enable ipv6 stuff */
 /* #undef RAK_USE_INET6 */
@@ -110,7 +110,7 @@
 #define USE_VARIABLE_FDSET 1
 
 /* Version number of package */
-#define VERSION "0.6.4"
+#define VERSION "rT:0.6.4 l:0.1"
 
 /* Number of bits in a file offset, on hosts where this is settable. */
 #define _FILE_OFFSET_BITS 64
