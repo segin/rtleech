@@ -303,7 +303,7 @@ do_panic(int signum) {
 
 void
 print_help() {
-  std::cout << "Rakshasa's BitTorrent client version " VERSION "." << std::endl;
+  std::cout << "rtleech " VERSION "." << std::endl;
   std::cout << std::endl;
   std::cout << "All value pairs (f.ex rate and queue size) will be in the UP/DOWN" << std::endl;
   std::cout << "order. Use the up/down/left/right arrow keys to move between screens." << std::endl;
@@ -340,7 +340,7 @@ print_help() {
   std::cout << "  o                 View trackers" << std::endl;
   std::cout << std::endl;
 
-  std::cout << "Report bugs to <jaris@ifi.uio.no>." << std::endl;
+  std::cout << "Report bugs to <ultramancool@gmail.com>." << std::endl;
 
   exit(0);
 }
